@@ -4,6 +4,14 @@ A small church giving platform, in-memory only: donations, fees, a ledger with
 reconciliation, refunds, and a thin HTTP-shaped API with a static donation page on top.
 No database, no framework. All money is in **integer cents**.
 
+> **Why this repo exists.** I am interviewing for QA engineering roles where the live exercise is
+> "here is a test suite, read it, extend it." I wanted to practice that exact format, so I wrote a
+> spec for a realistic stand-in, a church giving platform with donations, fees, a ledger, refunds
+> and an idempotent API, with a deliberately thin test suite and a few planted bugs, and had
+> Claude Code build the scaffold from it. `main` is the suite exactly as "handed to me". The
+> tests on the `extend-tests` branch are mine, written under a 60-minute timer without looking
+> at the answer key in `.solutions/`.
+
 ## Run it
 
 ```bash
