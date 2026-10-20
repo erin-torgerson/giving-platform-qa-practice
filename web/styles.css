@@ -1,0 +1,20 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f6f7f9;
+  color: #1a1d23;
+}
+body { margin: 0; display: grid; place-items: start center; min-height: 100vh; padding: 48px 16px; }
+main { width: 100%; max-width: 420px; background: #fff; border: 1px solid #e3e6ea; border-radius: 12px; padding: 28px; }
+h1 { margin: 0 0 4px; font-size: 28px; }
+.lede { margin: 0 0 24px; color: #5b6472; font-size: 14px; }
+form { display: grid; gap: 16px; }
+label { display: grid; gap: 6px; font-size: 14px; font-weight: 600; }
+label.checkbox { grid-template-columns: auto 1fr; align-items: center; font-weight: 500; }
+input[type="number"], select { font: inherit; padding: 10px 12px; border: 1px solid #c9ced6; border-radius: 8px; }
+button { font: inherit; font-weight: 600; padding: 12px; border: 0; border-radius: 8px; background: #2d6cdf; color: #fff; cursor: pointer; }
+button:disabled { opacity: 0.6; cursor: wait; }
+#message { margin: 20px 0 0; padding: 12px 14px; border-radius: 8px; font-size: 14px; }
+#message[data-state="success"] { background: #e8f6ec; color: #17623a; }
+#message[data-state="error"] { background: #fdecec; color: #9b1c1c; }
+#message[data-state="pending"] { background: #eef2f7; color: #3c4858; }
